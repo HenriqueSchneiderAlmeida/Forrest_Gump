@@ -1,0 +1,115 @@
+.corpo {        
+    background-color: rgb(77, 50, 174);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    max-width: 1024px;
+    width: 100%;    
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 768px) {
+        display: block;
+        margin: 0;
+    }
+
+    &__image {
+        border: 15px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        color: rgba(255, 255, 0);
+        @media (max-width: 768px) {
+            margin-bottom: 10px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        img {
+            height: 260px;
+            margin-top: 10px;  
+        }
+    }
+
+    &__form {
+        margin-top: 16px;
+        max-width: 590px;
+        width: 100%;
+        justify-content: space-between;
+        display: block;
+        text-align: left;
+    
+        @media (max-width: 768px) {
+            max-width: 200px;
+            width: 100%;
+            display: block;
+            margin: 0;
+        }
+    }
+    
+    .dep01 {
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin-top: 20px;
+        color:  rgba(255, 255, 0, 0.750);
+        @media (max-width: 768px) {
+            margin-top: 15px;
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        color:  rgba(255, 255, 0, 0.750);
+        margin-bottom: 20px;
+        font-size: 22px;
+        @media (max-width: 768px) {
+            margin-bottom: 0;
+            padding: 6px;
+            margin-top: 15px;            
+            white-space: nowrap;
+            font-size: 14px;
+            text-align:justify;
+        }
+    }
+
+    button {
+        width: 240px;
+        height: 48px;
+        margin-left: 32px;
+        margin-top: 12px;
+        font-weight: bold;
+        font-size: 22px;
+        cursor: pointer;
+        background-color: rgb(210, 31, 11);
+        color: rgba(255, 255, 0, 0.750);       
+    
+        @media (max-width: 768px) {
+            font-size: 16px;
+            width: 170px;
+            height: 40px;
+            font-weight: normal;
+
+        }
+    }
+
+    input {
+        font-size: 22px;
+        margin-left: 32px;
+        margin-bottom: 3px;
+        width: 400px;
+
+        @media (max-width: 768px) {
+            width: 300px;
+        }
+    }
+
+    label {
+        color:  rgba(255, 255, 0);
+        display: block;
+        margin-left: 32px;
+        font-size: 18px;
+    }
+}
